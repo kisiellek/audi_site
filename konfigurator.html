@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfigurator | Audi Polska</title>
+    <link rel="icon" type="image/png" href="images/main_page/logoblack.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="nav-group">
+        <a href="index.html" class="brand">
+          <img src="images/main_page/audilogo.svg" alt="Audi" />
+        </a>
+
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="modele.html">Modele</a></li>
+            <li><a href="konfigurator.html">Konfigurator</a></li>
+            <li><a href="serwis.html">Serwis i akcesoria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="kontakt.html" class="login-icon">
+        <img src="images/main_page/loginaudi.png" alt="Zaloguj się" />
+      </a>
+    </header>
+
+    <main class="config-wrapper">
+      <h1 class="config-title">Audi Q3 — Konfigurator</h1>
+
+      <section class="config">
+        <div class="car-view">
+          <img
+            id="carImage"
+            src="images/q3/colors/q3_blue.png"
+            alt="Audi Q3 – niebieski"
+          />
+        </div>
+
+        <div class="panel">
+          <h2 class="panel-title">Kolor nadwozia</h2>
+          <div
+            class="swatches"
+            role="radiogroup"
+            aria-label="Wybierz kolor nadwozia"
+          >
+            <button
+              class="swatch"
+              aria-pressed="true"
+              title="Niebieski"
+              style="--c: #214f8f"
+              data-src="images/konfigurator/q3niebieski.png"
+              data-name="niebieski"
+            ></button>
+
+            <button
+              class="swatch"
+              aria-pressed="false"
+              title="Biały"
+              style="--c: #e8e8e8"
+              data-src="images/konfigurator/q3bialy.png"
+              data-name="biały"
+            ></button>
+
+            <button
+              class="swatch"
+              aria-pressed="false"
+              title="Czarny"
+              style="--c: #111"
+              data-src="images/konfigurator/q3czarny.png"
+              data-name="czarny"
+            ></button>
+
+            <button
+              class="swatch"
+              aria-pressed="false"
+              title="Czerwony"
+              style="--c: #c41e2a"
+              data-src="images/konfigurator/q3czerwony.png"
+              data-name="czerwony"
+            ></button>
+
+            <button
+              class="swatch"
+              aria-pressed="false"
+              title="Szary"
+              style="--c: #6e7783"
+              data-src="images/konfigurator/q3szary.png"
+              data-name="szary"
+            ></button>
+
+            <button
+              class="swatch"
+              aria-pressed="false"
+              title="Zielony"
+              style="--c: #1e6a60"
+              data-src="images/konfigurator/q3zielony.png"
+              data-name="zielony"
+            ></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Audi Polska.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="konfigurator.js"></script>
+  </body>
+</html>
