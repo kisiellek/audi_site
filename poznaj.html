@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poznaj Q3 | Audi Polska</title>
+    <link rel="icon" type="image/png" href="images/main_page/logoblack.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="nav-group">
+        <a href="index.html" class="brand">
+          <img src="images/main_page/audilogo.svg" alt="Audi" />
+        </a>
+
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="modele.html">Modele</a></li>
+            <li><a href="konfigurator.html">Konfigurator</a></li>
+            <li><a href="serwis.html">Serwis i akcesoria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <a href="kontakt.html" class="login-icon">
+        <img src="images/main_page/loginaudi.png" alt="Zaloguj się" />
+      </a>
+    </header>
+
+    <main class="poznaj-page">
+      <section class="hero hero--poznaj">
+        <div class="hero-content">
+          <h1>Nowe Q3</h1>
+          <div class="hero-buttons">
+            <a href="konfigurator.html" class="btn-light">Skonfiguruj Q3</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="poznaj-grid container">
+        <figure class="poznaj-tile">
+          <img
+            src="images/poznaj/q3-1.jpg"
+            alt="Tył Audi Q3 z pasem świetlnym LED"
+          />
+          <figcaption>
+            Wyrazisty tył SUV-a z wąskimi lampami i pasem świetlnym LED. Pionowe
+            światła hamowania podkreślają szerokość auta.
+          </figcaption>
+        </figure>
+
+        <figure class="poznaj-tile">
+          <img
+            src="images/poznaj/q3-2.jpg"
+            alt="Przód Audi Q3 z osłoną Singleframe"
+          />
+          <figcaption>
+            Masywna osłona chłodnicy Singleframe z pionowym ożebrowaniem i
+            wąskie reflektory akcentują dynamiczny wygląd modelu.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="video-section poznaj-video">
+        <video autoplay muted loop playsinline>
+          <source src="images/audifilm2.mp4" type="video/mp4" />
+          Twoja przeglądarka nie obsługuje wideo.
+        </video>
+      </section>
+
+      <section class="big-heading">
+        <h2>Nowoczesne wnętrze</h2>
+        <p>
+          Wnętrze, którego nie znajdziesz w Mercedesie. Nowe Audi Q3 to
+          połączenie minimalistycznego designu, zaawansowanej technologii i
+          perfekcyjnego wykonania. Każdy detal został zaprojektowany z myślą o
+          kierowcy – od intuicyjnego kokpitu po najwyższej jakości materiały,
+          które tworzą wyjątkową atmosferę nowoczesnego luksusu.
+        </p>
+      </section>
+
+      <section class="full-bleed-image">
+        <div
+          class="full-bleed-image__bg"
+          style="--img: url('images/poznaj/q3-3.jpg')"
+        ></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Audi Polska.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
