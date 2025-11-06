@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Audi Polska</title>
+    <link rel="icon" type="image/png" href="images/main_page/logoblack.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="nav-group">
+        <a href="index.html" class="brand">
+          <img src="images/main_page/audilogo.svg" alt="Audi" />
+        </a>
+
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="modele.html">Modele</a></li>
+            <li><a href="konfigurator.html">Konfigurator</a></li>
+            <li><a href="serwis.html">Serwis i akcesoria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="kontakt.html" class="login-icon">
+        <img src="images/main_page/loginaudi.png" alt="Zaloguj się" />
+      </a>
+    </header>
+
+    <section class="contact-hero">
+      <div class="contact-hero__overlay">
+        <h1>Kontakt</h1>
+        <p>Centrum Wsparcia Usług Cyfrowych Audi</p>
+      </div>
+    </section>
+
+    <main class="contact-wrapper">
+      <section class="contact-card" aria-labelledby="contactTitle">
+        <h2 id="contactTitle">Napisz do nas</h2>
+
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">Imię</label>
+              <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                autocomplete="given-name"
+                required
+                placeholder="Imię"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="lastName">Nazwisko</label>
+              <input
+                id="lastName"
+                name="lastName"
+                type="text"
+                autocomplete="family-name"
+                required
+                placeholder="Nazwisko"
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Adres e-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              required
+              placeholder="kontakt@audi.pl"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Numer telefonu</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              inputmode="tel"
+              placeholder="Opcjonalnie"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="topic">Temat rozmowy</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>Wybierz temat…</option>
+              <option>Modele i dostępność</option>
+              <option>Konfigurator i zamówienia</option>
+              <option>Serwis i akcesoria</option>
+              <option>Jazda próbna</option>
+              <option>Inne</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Treść wiadomości</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tutaj wpisz treść swojej wiadomości...""></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Wyślij</button>
+            <p class="form-note">* Pola wymagane</p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Audi Polska.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
